@@ -1,5 +1,5 @@
 {
-  "name": "GoBarber",
+  "name": "gobarber",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/viniciussaturnino/GoBarber",
@@ -13,7 +13,13 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
     "sucrase": "^3.15.0"
   }
 }
