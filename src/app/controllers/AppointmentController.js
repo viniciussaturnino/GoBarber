@@ -62,6 +62,13 @@ class AppointmentController {
             });
         }
 
+        // Checking if the id is not the user's own
+        if (provider_id === req.userId) {
+            return res
+                .status(400)
+                .json({ error: "You can't create appointment with yourself" });
+        }
+
         // Check past dates
         const hourStart = startOfHour(parseISO(date));
 
